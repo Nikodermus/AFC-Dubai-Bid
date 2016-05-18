@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+*:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: 'Frutiger LT Roman';
+  font-size: 1em;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100vh;
+  background: #e7ebef;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Frutiger LT Bold';
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.fancybox-nav {
+  display: none !important;
+}
+.motherContainer {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.container {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+.container span.text {
+  color: #1e69b4;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+.container span.text1 {
+  bottom: 45px;
+  left: 240px;
+}
+.container span.text2 {
+  bottom: 45px;
+  left: 375px;
+}
+.container span.text3 {
+  bottom: 45px;
+  left: 478px;
+}
+.container span.text4 {
+  bottom: 24px;
+  left: 283px;
+}
+.container span.text5 {
+  bottom: 174px;
+  left: 195px;
+}
+.container span.text6 {
+  top: 129px;
+  right: -90px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.container .afclogo {
+  width: 450px;
+  height: 275px;
+  background: #fff;
+  position: absolute;
+  top: 22px;
+}
+.container .afclogo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 350px;
+  margin: auto;
+}
+.container img.map {
+  max-width: 1000px !important;
+  position: absolute;
+  top: 0;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container .room .glass {
+  position: absolute;
+  background: #00b0f2;
+  width: 35px;
+  height: 40px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  z-index: 2;
+}
+.container .room .glass img {
+  position: absolute;
+  z-index: 11;
+  width: 27px;
+  left: 5px;
+  top: 7px;
+}
+.container .room .hoverZone {
+  background: transparent;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  position: absolute;
+  overflow: hidden;
+  z-index: 3 !important;
+}
+.container .room .hoverZone:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  overflow: visible;
+}
+.container .room img.mainImage {
+  position: absolute;
+  width: 450px;
+  height: 275px;
+  max-width: 1000px !important;
+}
+.container .room h1 {
+  position: absolute;
+  font-size: 3em;
+  color: #1e69b4;
+  width: 545px !important;
+  z-index: 5;
+}
+.container .room div.titleBackground {
+  z-index: 4;
+  width: 545px;
+  height: 50px;
+  position: absolute;
+  background: #e7ebef;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.container .room div.click {
+  background: #1e69b4;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.container .room div.textbox {
+  position: absolute;
+  background: #1e69b4;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  top: 0;
+  right: 0;
+}
+.container .room div.textbox img {
+  position: absolute;
+  z-index: 11;
+  width: 43px;
+}
+.container .room div.textbox span {
+  color: #fff;
+  z-index: 11;
+  position: absolute;
+  font-size: 0.9em;
+}
+.container .room1 .glass {
+  bottom: 238px;
+  left: 172px;
+}
+.container .room1 .hoverZone {
+  width: 236px;
+  height: 82px;
+  bottom: 196px;
+  left: 172px;
+}
+.container .room1 .hoverZone img.mainImage {
+  top: -302px;
+  left: -172px;
+}
+.container .room1 .hoverZone h1 {
+  bottom: -187px;
+  left: -173px;
+}
+.container .room1 .hoverZone div.titleBackground {
+  bottom: -180px;
+  left: -173px;
+}
+.container .room1 .hoverZone div.textbox img {
+  left: 4px;
+  top: 4px;
+}
+.container .room1 .hoverZone div.textbox span {
+  top: 17px;
+  right: 8px;
+}
+.container .room2 .glass {
+  bottom: 123px;
+  left: 170px;
+}
+.container .room2 .hoverZone {
+  width: 150px;
+  height: 80px;
+  bottom: 82px;
+  left: 170px;
+}
+.container .room2 .hoverZone img.mainImage {
+  top: -417px;
+  left: -170px;
+}
+.container .room2 .hoverZone h1 {
+  bottom: -74px;
+  left: -169px;
+}
+.container .room2 .hoverZone div.titleBackground {
+  bottom: -67px;
+  left: -169px;
+}
+.container .room2 .hoverZone div.textbox img {
+  left: 4px;
+  top: 4px;
+}
+.container .room2 .hoverZone div.textbox span {
+  top: 17px;
+  right: 8px;
+}
+.container .room3 .glass {
+  bottom: 123px;
+  left: 326px;
+}
+.container .room3 .hoverZone {
+  width: 100px;
+  height: 80px;
+  bottom: 84px;
+  left: 326px;
+}
+.container .room3 .hoverZone img.mainImage {
+  top: -414px;
+  left: -326px;
+}
+.container .room3 .hoverZone h1 {
+  bottom: -74px;
+  left: -325px;
+}
+.container .room3 .hoverZone div.titleBackground {
+  bottom: -67px;
+  left: -325px;
+}
+.container .room3 .hoverZone div.textbox img {
+  left: 4px;
+  top: 4px;
+}
+.container .room3 .hoverZone div.textbox span {
+  top: 17px;
+  right: 8px;
+}
+.container .room4 .glass {
+  bottom: 123px;
+  left: 432px;
+}
+.container .room4 .hoverZone {
+  width: 100px;
+  height: 80px;
+  bottom: 82px;
+  left: 432px;
+}
+.container .room4 .hoverZone img.mainImage {
+  top: -416px;
+  left: -432px;
+}
+.container .room4 .hoverZone h1 {
+  bottom: -74px;
+  left: -430px;
+}
+.container .room4 .hoverZone div.titleBackground {
+  bottom: -67px;
+  left: -430px;
+}
+.container .room4 .hoverZone div.textbox img {
+  left: 4px;
+  top: 4px;
+}
+.container .room4 .hoverZone div.textbox span {
+  top: 17px;
+  right: 8px;
+}
+.container .room5 .glass {
+  top: 34px;
+  right: 136px;
+}
+.container .room5 .hoverZone {
+  width: 140px;
+  height: 208px;
+  top: 34px;
+  right: 32px;
+}
+.container .room5 .hoverZone img.mainImage {
+  top: -11px;
+  left: -628px;
+}
+.container .room5 .hoverZone h1 {
+  bottom: -347px;
+  left: -628px;
+}
+.container .room5 .hoverZone div.titleBackground {
+  bottom: -340px;
+  left: -628px;
+}
+.container .room5 .hoverZone div.textbox img {
+  left: 4px;
+  top: 4px;
+}
+.container .room5 .hoverZone div.textbox span {
+  top: 17px;
+  right: 8px;
+}
+.youtubeBox {
+  border: 1px solid #000;
+  height: 598px;
+  width: 810px;
+  display: none;
+}
+.youtubeBox div {
+  height: 118px;
+  width: 810px;
+  overflow: hidden;
+}
+.youtubeBox div img {
+  float: left;
+  width: 270px;
+}
+.youtubeBox iframe {
+  overflow: hidden;
+}

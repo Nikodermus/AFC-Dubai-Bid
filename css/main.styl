@@ -1,0 +1,331 @@
+// cd *ruta de la carpeta css*
+//pushd *ruta externa de la carpeta css*
+// stylus -u nib -w main.styl
+
+@import 'nib'
+
+vendor-prefixes = webkit moz o ms official
+easeTransition = all 0.5s ease
+title = 'Frutiger LT Bold'
+body = 'Frutiger LT Roman'
+light = 'Frutiger LT Light'
+boxed = 1200px
+afcblue = #1e69b4
+afccyan = #00b0f2
+
+// Generales
+
+*
+    margin 0
+    padding 0
+    transition all 0.5s ease
+    &:hover
+        transition all 0.5s ease
+        transition-delay 0.5s
+a
+    text-decoration none
+    color inherit
+    &:visited
+        text-decoration none
+        color inherit
+body
+    font-family body
+    font-size 1em
+    font-size 16px
+    width 100%
+    max-width 100%
+    overflow hidden
+    max-height 100vh
+    background #e7ebef
+h1
+h2
+h3
+h4
+h5
+h6
+    font-family title
+img 
+    width 100%
+    max-width 100%
+.fancybox-nav
+    display none !important
+    
+// Main frame
+
+.motherContainer
+    width 800px
+    height 600px
+    position absolute
+    margin auto
+    top 0
+    bottom 0
+    left 0
+    right 0
+.container
+    width 800px
+    height 600px
+    position relative
+    margin auto
+    span
+        &.text
+            color afcblue
+            text-transform uppercase
+            font-size 1.2em
+            position absolute
+            z-index 3
+            display none
+        &.text1
+            bottom 45px
+            left 240px
+        &.text2
+            bottom 45px
+            left 375px
+        &.text3
+            bottom 45px
+            left 478px
+        &.text4
+            bottom 24px
+            left 283px
+        &.text5
+            bottom 174px
+            left 195px
+        &.text6
+            top 129px
+            right -90px
+            transform rotate(-90deg)
+    .afclogo
+        width 450px
+        height 275px
+        background white
+        position absolute
+        top 22px
+        img
+            position absolute
+            top 0
+            bottom 0
+            left 0
+            right 0
+            width 350px
+            margin auto
+    img.map
+        max-width 1000px !important
+        position absolute
+        top 0
+        bottom 45px
+        left 0
+        right 0
+        margin auto
+    .room
+        .glass
+            position absolute
+            background afccyan
+            width 35px
+            height 40px
+            opacity 1
+            z-index 2
+            img
+                position absolute
+                z-index 11
+                width 27px
+                left 5px
+                top 7px
+        .hoverZone
+            background transparent
+            opacity 0
+            position absolute
+            overflow hidden
+            z-index 3 !important
+            &:hover
+                opacity 1
+                overflow visible
+        img.mainImage
+            position absolute
+            width 450px
+            height 275px
+            max-width 1000px !important
+        h1
+            position absolute
+            font-size 3em
+            color afcblue
+            width 545px !important
+            //background #e7ebef
+            z-index 5
+        div.titleBackground
+            z-index 4
+            width 545px
+            height 50px
+            position absolute
+            background #e7ebef
+            transition all 0.1s ease
+        div.click
+            background afcblue
+            //position absolute
+            opacity 0.5
+            z-index 10
+            width 100%
+            height 100%
+        div.textbox
+            position absolute
+            background afcblue
+            width 50px
+            height 50px
+            opacity 1
+            top 0
+            right 0
+            img
+                position absolute
+                z-index 11
+                width 43px
+            span
+                color white
+                z-index 11
+                position absolute
+                font-size 0.9em
+    .room1
+        //display none
+        .glass
+            bottom 238px
+            left 172px
+        .hoverZone
+            width 236px
+            height 82px
+            bottom 196px
+            left 172px
+            img.mainImage
+                top -302px
+                left -172px
+            h1
+                bottom -187px
+                left -173px
+            div.titleBackground
+                bottom -180px
+                left -173px
+            div.textbox
+                img
+                    left 4px
+                    top 4px
+                span
+                    top 17px
+                    right 8px
+    .room2
+        //display none
+        .glass
+            bottom 123px
+            left 170px
+        .hoverZone
+            width 150px
+            height 80px
+            bottom 82px
+            left 170px
+            img.mainImage
+                top -417px
+                left -170px
+            h1
+                bottom -74px
+                left -169px
+            div.titleBackground
+                bottom -67px
+                left -169px
+            div.textbox
+                img
+                    left 4px
+                    top 4px
+                span
+                    top 17px
+                    right 8px
+    .room3
+        //display none
+        .glass
+            bottom 123px
+            left 326px
+        .hoverZone
+            width 100px
+            height 80px
+            bottom 84px
+            left 326px
+            img.mainImage
+                top -414px
+                left -326px
+            h1
+                bottom -74px
+                left -325px
+            div.titleBackground
+                bottom -67px
+                left -325px
+            div.textbox
+                img
+                    left 4px
+                    top 4px
+                span
+                    top 17px
+                    right 8px
+    .room4
+        //display none
+        .glass
+            bottom 123px
+            left 432px
+        .hoverZone
+            width 100px
+            height 80px
+            bottom 82px
+            left 432px
+            img.mainImage
+                top -416px
+                left -432px
+            h1
+                bottom -74px
+                left -430px
+            div.titleBackground
+                bottom -67px
+                left -430px
+            div.textbox
+                img
+                    left 4px
+                    top 4px
+                span
+                    top 17px
+                    right 8px
+    .room5
+        //display none
+        .glass
+            top 34px
+            right 136px
+        .hoverZone
+            width 140px
+            height 208px
+            top 34px
+            right 32px
+            img.mainImage
+                top -11px
+                left -628px
+            h1
+                bottom -347px
+                left -628px
+            div.titleBackground
+                bottom -340px
+                left -628px
+            div.textbox
+                img
+                    left 4px
+                    top 4px
+                span
+                    top 17px
+                    right 8px
+                    
+    
+.youtubeBox
+    border 1px solid black
+    height 598px
+    width 810px
+    display none
+    div
+        height 118px
+        width 810px
+        overflow hidden
+        img
+            float left
+            width 270px
+    iframe
+        overflow hidden
+        
+    
